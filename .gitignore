@@ -42,7 +42,6 @@
 # Test binary, built with `go test -c`
 *.test
 
-input.txt
 input.json
 test.txt
 sortedInput.txt

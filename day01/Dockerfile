@@ -5,4 +5,5 @@ RUN cargo install --path .
 
 FROM debian:buster-slim
 COPY --from=builder /usr/local/cargo/bin/day01 /usr/local/bin/day01
+COPY input.txt .
 CMD ["day01"]
