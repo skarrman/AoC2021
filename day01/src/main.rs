@@ -23,32 +23,22 @@ fn main() {
     }
 }
 
-fn _is_prime(n: usize, i: usize) -> bool {
-    match n {
-        n if n <= 2 => n == 2,
-        n if n % i == 0 => false,
-        n if i * i > n => true,
-        _ => _is_prime(n, i + 1),
-    }
-}
-fn is_prime(n: usize) -> bool {
-    _is_prime(n, 2)
-}
-
 fn part1(data: &Vec<usize>) {
-    let res = data.iter().enumerate().fold(0, |sum, (i, num)| {
-        sum + if is_prime(*num) { i * num } else { 0 }
+    let res = data.as_slice().windows(2).fold(0, |sum, window| {
+        sum + if window[0] < window[1] { 1 } else { 0 }
     });
     println!("{}", res);
 }
 
 fn part2(data: &Vec<usize>) {
-    let res = data.iter().enumerate().fold(0i32, |sum, (i, num)| {
-        sum + match is_prime(*num) {
-            false if i % 2 == 0 => *num as i32,
-            false => -(*num as i32),
-            _ => 0,
-        }
-    });
+    let res = data
+        .as_slice()
+        .windows(3)
+        .map(|window| window[0] + window[1] + window[2])
+        .collect::<Vec<usize>>()
+        .windows(2)
+        .fold(0, |sum, window| {
+            sum + if window[0] < window[1] { 1 } else { 0 }
+        });
     println!("{}", res);
 }
