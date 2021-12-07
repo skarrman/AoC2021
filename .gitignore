@@ -63,4 +63,17 @@ bin/
 obj/
 
 .fake
-.ionidenode_modules
+.ionidenode_modules# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+
+# Gradle wrapper jar needs to be included
+!gradle-wrapper.jar
+
+#Ignore vscode stuff
+.vscode
+.project
+.settings
+.classpath
