@@ -91,3 +91,5 @@ build
 .project
 .settings
 .classpath
+.dart_tool/
+.packages
