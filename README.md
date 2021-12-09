@@ -1,16 +1,16 @@
 # Advent of Code 2021 
 
-| Language   | Days used |
-|------------|-----------|
-| Rust       | day01     |
-| F#         | day02     |
-| JavaScript | day03     |
-| Python     | day04     |
-| C++        | day05     |
-| C#         | day06     |
-| Kotlin     | day07     |
-| Java       | day08     |
-| Dart       | day09     |
+| Language   | Used in |
+|------------|---------|
+| Rust       | day01   |
+| F#         | day02   |
+| JavaScript | day03   |
+| Python     | day04   |
+| C++        | day05   |
+| C#         | day06   |
+| Kotlin     | day07   |
+| Java       | day08   |
+| Dart       | day09   |
 
 ```
                        .--------.
