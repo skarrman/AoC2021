@@ -11,6 +11,7 @@
 | Kotlin     | day07   |
 | Java       | day08   |
 | Dart       | day09   |
+| Go         | day10   |
 
 ```
                        .--------.
