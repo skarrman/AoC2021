@@ -2,7 +2,7 @@
 
 | Language   | Used in      |
 |------------|--------------|
-| Rust       | day01        |
+| Rust       | day01, day12 |
 | F#         | day02        |
 | JavaScript | day03        |
 | Python     | day04, day11 |
