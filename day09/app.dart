@@ -50,7 +50,6 @@ List<Pos> search(Pos p, List<List<int>> input) {
 int solutionPart2(List<List<int>> input) {
   List<Pos> searched = [];
   HashMap<Pos, Set<Pos>> basinsMap = HashMap();
-  int sum = 0;
   for (int i = 0; i < input.length; i++) {
     for (int j = 0; j < input[i].length; j++) {
       List<Pos> toSearch = [];
